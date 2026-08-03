@@ -1,0 +1,100 @@
+.introContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doorVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.tapButton {
+  background: rgba(13, 13, 13, 0.8);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: var(--font-arabic);
+  backdrop-filter: blur(5px);
+  animation: pulse 2s infinite;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.tapButton:hover {
+  background: var(--primary-color);
+  color: var(--background-color);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+.revealOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 13, 13, 0.85); /* Darker overlay to make names pop */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+}
+
+.names {
+  font-size: 4rem;
+  text-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ampersand {
+  font-family: var(--font-english);
+  font-size: 3.5rem;
+  margin: 0 1rem;
+  opacity: 0.8;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--secondary-text);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .names {
+    font-size: 2.8rem;
+  }
+  .ampersand {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}

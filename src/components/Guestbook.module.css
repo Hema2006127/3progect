@@ -1,0 +1,127 @@
+.guestbookContainer {
+  margin: 3rem auto;
+  max-width: 700px;
+  padding: 2.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  color: var(--color-primary);
+}
+
+.title {
+  color: var(--color-primary);
+  font-family: 'Amiri', serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.input, .textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.submitBtn {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.messagesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Scrollbar styles */
+.messagesList::-webkit-scrollbar {
+  width: 6px;
+}
+.messagesList::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.messagesList::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+.emptyState {
+  text-align: center;
+  color: var(--color-text-light);
+  font-style: italic;
+  padding: 2rem;
+}
+
+.messageCard {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid var(--color-primary);
+  padding: 1.25rem;
+  border-radius: 0 8px 8px 0;
+  text-align: right;
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.messageHeader strong {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.messageText {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}

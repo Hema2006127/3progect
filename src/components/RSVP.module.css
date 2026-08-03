@@ -1,0 +1,111 @@
+.rsvpContainer {
+  margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.title {
+  color: var(--color-primary);
+  font-family: 'Amiri', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: right;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.statusButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.statusBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.statusBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.activeAttending {
+  background: rgba(46, 125, 50, 0.2);
+  border-color: #2e7d32;
+  color: #a5d6a7;
+}
+
+.activeNotAttending {
+  background: rgba(198, 40, 40, 0.2);
+  border-color: #c62828;
+  color: #ef9a9a;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  color: var(--color-primary);
+}
+
+@media (max-width: 480px) {
+  .statusButtons {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,66 @@
+.musicPlayerContainer {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 50;
+}
+
+.playBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.playBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.playBtn.playing {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.2);
+}
+
+.equalizer {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 2px;
+  height: 10px;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 3px;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  animation: equalize 1s infinite;
+}
+
+.bar:nth-child(1) { animation-delay: 0.1s; height: 100%; }
+.bar:nth-child(2) { animation-delay: 0.3s; height: 60%; }
+.bar:nth-child(3) { animation-delay: 0.5s; height: 80%; }
+
+@keyframes equalize {
+  0%, 100% { height: 4px; }
+  50% { height: 10px; }
+}
+
+@media (max-width: 768px) {
+  .musicPlayerContainer {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
