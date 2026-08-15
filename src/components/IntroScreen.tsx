@@ -62,13 +62,13 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5 }}
           >
-            <motion.h1 
+            <motion.h1
               className={styles.names}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.5, duration: 2, ease: "easeOut" }}
             >
-              يوسف <span className={styles.ampersand}>&</span> مريم
+              محمد <span className={styles.ampersand}>&</span> ريم
             </motion.h1>
             <motion.p
               className={styles.subtitle}

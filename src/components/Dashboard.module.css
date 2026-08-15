@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(10, 10, 10, 0.85);
+  background: rgba(250, 245, 235, 0.92);
   backdrop-filter: blur(8px);
   z-index: 1000;
   display: flex;
@@ -45,8 +45,8 @@
 }
 
 .statCard {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   padding: 1.5rem;
   display: flex;
@@ -82,7 +82,7 @@
 .tableWrapper {
   overflow-y: auto;
   flex: 1;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 8px;
 }
 
@@ -90,7 +90,7 @@
   width: 6px;
 }
 .tableWrapper::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
 }
 .tableWrapper::-webkit-scrollbar-thumb {
   background: var(--color-primary);
@@ -105,11 +105,11 @@
 
 .table th, .table td {
   padding: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .table th {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(250, 243, 232, 0.95);
   font-weight: 600;
   position: sticky;
   top: 0;
@@ -128,21 +128,21 @@
 }
 
 .badgeSuccess {
-  background: rgba(46, 125, 50, 0.2);
-  color: #a5d6a7;
-  border: 1px solid rgba(46, 125, 50, 0.5);
+  background: rgba(46, 125, 50, 0.15);
+  color: #2e7d32;
+  border: 1px solid rgba(46, 125, 50, 0.4);
 }
 
 .badgeDanger {
-  background: rgba(198, 40, 40, 0.2);
-  color: #ef9a9a;
-  border: 1px solid rgba(198, 40, 40, 0.5);
+  background: rgba(198, 40, 40, 0.15);
+  color: #c62828;
+  border: 1px solid rgba(198, 40, 40, 0.4);
 }
 
 .emptyState {
   text-align: center;
   padding: 3rem;
   color: var(--color-text-light);
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.03);
   border-radius: 8px;
 }

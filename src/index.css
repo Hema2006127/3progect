@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  --primary-color: #d4af37; /* Gold */
-  --background-color: #0d0d0d; /* Royal Black */
-  --text-color: #ffffff;
-  --secondary-text: #a0a0a0;
-  
+  --primary-color: #a9762d; /* Deep Gold */
+  --background-color: #faf3e8; /* Warm Ivory */
+  --text-color: #2e2a24; /* Warm Charcoal */
+  --secondary-text: #7d6c58; /* Warm Taupe */
+
+  --color-primary: var(--primary-color);
+  --color-primary-rgb: 169, 118, 45;
+  --color-bg: var(--background-color);
+  --color-text: var(--text-color);
+  --color-text-light: var(--secondary-text);
+
   --font-arabic: 'Amiri', serif;
   --font-english: 'Playfair Display', serif;
 }
@@ -36,10 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Utilities */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.2);
   border-radius: 16px;
   padding: 2rem;
 }
@@ -67,9 +73,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   background: var(--primary-color);
-  color: var(--background-color);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 15px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .btn-primary {

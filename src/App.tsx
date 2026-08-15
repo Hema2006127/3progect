@@ -37,7 +37,7 @@ function App() {
   };
 
   // Set the dummy data based on user request
-  const dummyNames = "يوسف & مريم";
+  const dummyNames = "محمد & ريم";
   // Wedding date in a month
   const targetDateObj = new Date();
   targetDateObj.setMonth(targetDateObj.getMonth() + 1);
@@ -73,7 +73,7 @@ function App() {
               right: '2rem',
               background: 'transparent',
               border: 'none',
-              color: 'rgba(255,255,255,0.2)',
+              color: 'rgba(0,0,0,0.15)',
               cursor: 'pointer',
               zIndex: 50
             }}

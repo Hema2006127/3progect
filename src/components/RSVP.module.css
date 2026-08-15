@@ -39,8 +39,8 @@
 .input {
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.7);
   color: var(--color-text);
   font-family: inherit;
   font-size: 1rem;
@@ -50,7 +50,7 @@
 .input:focus {
   outline: none;
   border-color: var(--color-primary);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .statusButtons {
@@ -66,8 +66,8 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   color: var(--color-text);
   font-family: inherit;
@@ -77,19 +77,19 @@
 }
 
 .statusBtn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.04);
 }
 
 .activeAttending {
-  background: rgba(46, 125, 50, 0.2);
+  background: rgba(46, 125, 50, 0.15);
   border-color: #2e7d32;
-  color: #a5d6a7;
+  color: #2e7d32;
 }
 
 .activeNotAttending {
-  background: rgba(198, 40, 40, 0.2);
+  background: rgba(198, 40, 40, 0.15);
   border-color: #c62828;
-  color: #ef9a9a;
+  color: #c62828;
 }
 
 .successMessage {

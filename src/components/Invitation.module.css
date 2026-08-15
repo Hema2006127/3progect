@@ -1,7 +1,7 @@
 .invitationContainer {
   min-height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.9)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80');
+  background-image: linear-gradient(rgba(250, 245, 235, 0.88), rgba(250, 245, 235, 0.94)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -30,7 +30,7 @@
 .title {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  text-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.25);
 }
 
 .subtitle {
@@ -42,8 +42,8 @@
 .details {
   margin: 3rem 0;
   padding: 2rem 0;
-  border-top: 1px solid rgba(212, 175, 55, 0.2);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  border-top: 1px solid rgba(var(--color-primary-rgb), 0.25);
+  border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.25);
 }
 
 .dateLabel {
